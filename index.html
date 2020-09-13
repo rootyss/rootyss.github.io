@@ -1,138 +1,179 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ЖК "Лунное море", rootyss</title>
-
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Портал «Music Box», rootyss </title>
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<header class="header header-fixed">
-	<div class="flex flex-center">
-		<img class="logo-image" src="logo.svg" alt="Логотип">
-		<p class="fwb">Лунное море</p>
-	</div>
-	<nav class="flex flex-center">
-		<ul class="pl0 flex">
-			<li class="menu-list-item"><a class="link color-dark" href="#advantages">Преимущества</a></li>
-			<li class="menu-list-item"><a class="link color-dark" href="#about">О ЖК «Лунное море»</a></li>
-			<li class="menu-list-item"><a class="link color-dark" href="#rest">Места для отдыха</a></li>
-		</ul>
-	</nav>
-</header>
-
-<main>
-<section class="bg-space">
-	<div class="container container-content-column flex">
-		<img class="w10vw" src="logo.svg" alt="Логотип">
-		<h1>ЖК «Лунное море»</h1>
-		<p class="text-fff">Место, откуда не хочется улетать</p>
-		<a class="button" href="#form">Забронировать</a>
-	</div>
-</section>
-
-<section id="advantages">
-	<div class="container flex flex-start">
-		<div class="w30">
-			<h2>Уникальный вид</h2>
-			<p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
+	<header>
+		<div class="container d-flex center jc-sb m0 fw-w mob-header">
+			<div class="logo d-flex center jc-fs">
+				<img class="logo-img" src="./images/logo.svg" alt="Лого Music Box">
+				<a href="#" class="fz11 fb text-up logo-color">music box</a>
+			</div>
+			<nav class="header-nav">
+			<ul class="d-flex center lh-1 jc-fs fw-w">
+				<li><a href="#" class="dark-link fz11 fb text-up">Главная</a></li>
+				<li><a href="catalog.html" class="link dark-link fz11 fb text-up">Каталог</a></li>
+				<li><a href="#" class="dark-link fz11 fb text-up">Исполнители</a></li>
+				<li><a href="#" class="dark-link fz11 fb text-up">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="search"><input type="search" placeholder="поиск..."></div>
 		</div>
-		<div class="w30">
-			<h2>Инфраструктура</h2>
-			<p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
-		</div>
-		<div class="w30">
-			<h2>Близость к Москве</h2>
-			<p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
-		</div>
-	</div>
-</section>
-
-<section id="about" class="container-bg-gray">
-	<div class="container flex">
-		<div class="w45">
-			<h2>О ЖК «Лунное море»</h2>
-			<p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
-			<p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
-		</div>
-		<img class="w30" src="moon-1.jpg" alt="Луна">
-	</div>
-</section>
-
-<section id="rest">
-	<div class="container flex">
-		<img class="w30" src="moon-2.jpg" alt="Луна">
-		<div class="w45">
-			<h2>Места для отдыха</h2>
-			<p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
-			<p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
-		</div>
-	</div>
-</section>
-
-<section class="container-bg-gray">
-	<div class="container container-content-column flex">
-		<h2>Оставьте заявку сегодня!</h2>
-		<form id="form" class="w50" action="#">
-			<fieldset class="form-field flex form-field-green">
-				<legend class="form-legend">Параметры квартиры</legend>
-					<label class="jc-sb flex form-label-margin">Количество комнат:
-						<select class="form-param-select">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-						</select>
-					</label>
-					<label class="jc-sb flex form-label-margin">Отделка:
-						<select class="form-param-select">
-							<option value="garn1">Без отделки</option>
-							<option value="garn2">С отделкой</option>
-							<option value="garn3">White box</option>
-						</select>
-					</label>
-			</fieldset>
-			<fieldset class="form-field flex form-field-green">
-				<legend class="form-legend">Контактная информация</legend>
-					<label class="jc-sb flex form-label-margin">Имя:<input class="form-contact-input" type="text" name="name"></label>
-					<label class="jc-sb flex form-label-margin">Телефон:<input class="form-contact-input" type="text" name="phone"></label>
-					<label class="jc-sb flex form-label-margin">E-mail:<input class="form-contact-input" type="text" name="email"></label>
-			</fieldset>
-			<input class="button button-green" type="submit" value="Отправить">
+	</header>
+<section class="main-banner d-flex">
+	<div class="container d-flex center m0 fd-c  p0">
+		<h1 class="mb10">онлайн музыка где угодно</h1>
+		<p class="fz30 text-up fb m0 mb45 mfz18">без ограничений</p>
+		<p class="fz18 fb m0 mb40 mfz12">Получите доступ всего за несколько шагов. Заполните форму и откройте мир музыки</p>
+		<form action="#" class="d-flex fw-w jc-sb">
+			<input class="input-in fz14 fb mb30" type="text" placeholder="Имя">
+			<input class="input-in fz14 fb mb30" type="email" placeholder="Email">
+			<input class="main-btn text-up fz14 fb" type="submit" value="Получить доступ">
 		</form>
 	</div>
 </section>
 
+<main>
+	<div class="container m0 p0">
+	<section class="d-flex fd-c center p0">
+		<h2>Формы подписки</h2>
+		<div class="d-flex jc-sb w100 fw-w mfc">
+			<div class="sub bg-free mb30 mr20">
+				<p class="text-up mba fz24 mfz16">бесплатная</p>
+				<div class="d-flex ai-fs mb40"><span class="fz60 lh-1 mr10">0</span><span class="fz30 text-up">руб.</span></div>
+				<a class="text-up light-link sub-btn fz24 mb35" href="#">Оформить</a>
+				<p class="fz11  text-c m0">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+			</div>
+			<div class="sub bg-standart mb30 mr20">
+				<p class="text-up mba fz24 mfz16">Стандартная</p>
+				<div class="d-flex ai-fs mb40"><span class="fz60 lh-1 mr10">250</span><span class="fz30 text-up">руб.</span></div>
+				<a class="text-up light-link sub-btn fz24 mb35" href="#">Оформить</a>
+				<p class="fz11  text-c m0">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+			</div>
+			<div class="sub bg-preium mb30 mr20">
+				<p class="text-up mba fz24 mfz16">Премиум</p>
+				<div class="d-flex ai-fs mb40"><span class="fz60 lh-1 mr10">500</span><span class="fz30 text-up">руб.</span></div>
+				<a class="text-up light-link sub-btn fz24 mb35" href="#">Оформить</a>
+				<p class="fz11 text-c m0">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+			</div>
+		</div>
+		<p class="text-c fz22 fw300 mfz12">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+	</section>
+	<section class="d-flex fd-c center">
+		<h2 class="mm50">Последние новости</h2>
+	<div class="d-flex jc-sb mb70 mfd-c">
+		<div>
+			<img class="mr68 m-news-img" src="images/Music to Be Murdered By.png" alt="Альбом Music to Be Murdered By">
+		</div>
+		<div>
+			<h3>Music to Be Murdered By</h3>
+			<p class="fz14 text-dark">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе.</p>
+			<p class="fz14 text-dark mb20">На альбоме вас ждёт 20 новых треков.</p>
+		<div class="d-flex center jc-fs mb50 mmb30"> 
+			<img class="mr20" src="images/avatar.png" alt="Аватар пользователя">
+			<span class="fz12 color-author text-up">Music box</span>
+			<span class="vert-bord"></span>
+			<span class="fz12 text-gray">17/01/2020</span> 
+			
+		</div>
+		<a class="text-up fz12 text-dark btn-album" href="#">К альбому</a>
+		</div>
+</div>
+<div class="d-flex jc-sb mfd-c">
+		<div class="mr68 second">
+			<h3>Ordinary Man</h3>
+			<p class="fz14 text-dark">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man.</p>
+			<p class="fz14 text-dark mb20">Слушайте в числе первых на Music Box.</p>
+		<div class="d-flex center jc-fs mb50 mmb30"> 
+			<img class="mr20 " src="images/avatar.png" alt="Аватар пользователя">
+			<span class="fz12 color-author text-up">Music box</span>
+			<span class="vert-bord"></span>
+			<span class="fz12 text-gray">24/02/2020</span> 
+			
+		</div>
+		<a class="text-up fz12 text-dark btn-album" href="#">К альбому</a>
+		</div>
+		<div class="first">
+			<img class="m-news-img" src="images/Ordinary Man.png" alt="Альбом Ordinary Man">
+		</div>
+</div>
+	</section>
+	<section class="d-flex fd-c center">
+		<h2>Мобильное приложение</h2>
+		<div class="d-flex jc-sa w100 mfd-c mfc">
+			<div class="d-flex fd-c center ai-fs second">
+			<p class="fz16 text-dark mw560 mb10 ">Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
+			<p class="fz16 text-dark mw560  mb30">С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
+			<a class="fz14 light-link btn-dl" href="#">Скачать</a>
+			</div>
+			<div class="first" >
+			<img class="m-news-img" src="images/iphone.png" alt="Мобильное приложение">
+			</div>
+		</div>
+	</section>
+</div>
+
 
 </main>
-<footer class="footer container-bg-dark">
-	<section class="container flex flex-start">
-	<div>
-		<div class="mb15 flex flex-center">
-			<img class="logo-image" src="logo.svg" alt="Логотип">
-			<p class="fwb text-fff">Лунное море</p>
-		</div>
-		<span class="text-fff"><small>&#169;</small> 2032 год</span>
-	</div>
-	<div>
-		<h3 class="text-fff">Проектная документация</h3>
-		<ul>
-			<li class="text-fff"><a class="link text-fff wf100" href="#">Скачать</a></li>
-			<li class="text-fff"><a class="link text-fff wf100" href="#">Посмотреть на сайте</a></li>
-		</ul>
-	</div>
-	<div>
-		<h3 class="text-fff">О застройщике</h3>
-		<ul>
-			<li class="text-fff"><a class="link text-fff wf100" href="#">Отзывы</a></li>
-			<li class="text-fff"><a class="link text-fff wf100" href="#">Сайт компании</a></li>
-		</ul>
-	</div>
-	</section>
-</footer>
-			
 
+
+<footer>
+	<div class="container d-flex fd-c m0">
+		<div class="d-flex jc-fs footer-head fw-w mjc-sb">
+			<div class="footer-elem about">
+				<h4>О нас</h4>
+				<ul >
+				<li class="mb20"><a href="#" class="dark-link fz16 f-color">История компании</a></li>
+				<li class="mb20"><a href="catalog.html" class="dark-link fz16 f-color">Карьера</a></li>
+				<li class="mb20"><a href="#" class="dark-link fz16 f-color">Особенности</a></li>
+				<li class="mb20"><a href="#" class="dark-link fz16 f-color">Пресса</a></li>
+			</ul>
+			</div>
+			<div class="footer-elem">
+				<h4>Поддержка</h4>
+				<ul >
+				<li class="mb20"><a href="#" class="dark-link fz16 f-color">База знаний</a></li>
+				<li class="mb20"><a href="#" class="dark-link fz16 f-color">Тарифы</a></li>
+				<li class="mb20"><a href="#" class="dark-link fz16 f-color">Мобильное приложение</a></li>
+				<li class="mb20"><a href="#" class="dark-link fz16 f-color">Условия использования</a></li>
+			</ul>
+			</div>
+			<div class="footer-elem">
+				<h4>Контакты</h4>
+				<ul >
+				<li class="mb20"><a href="mailto:hello@music.box" class="dark-link fz16 f-color">hello@music.box</a></li>
+				<li class="mb20 w142"><span class="dark-link fz16 f-color">Russia, Moscow. Music Box studio</span></li>
+				<li class="mb20"><a href="tel:+74999999999" class="dark-link fz16 f-color">+ 7 499 999 99 99</a></li>
+			</ul>
+			</div>
+			<div class="socials footer-elem">
+				<h4>Подписывайтесь</h4>
+				<ul class="d-flex">
+				<li class="mb20"><a href="#"><img src="images/Google+.png" alt="Подписаться на Google+"></a></li>
+				<li class="mb20"><a href="#"><img src="images/Twitter.png" alt="Подписаться на Twitter"></a></li>
+				<li class="mb20"><a href="#"><img src="images/Facebook.png" alt="Подписаться на Facebook"></a></li>
+				<li class="mb20"><a href="#"><img src="images/Instagram.png" alt="Подписаться на Instagram"></a></li>
+			</ul>
+			</div>
+		</div>
+		<hr class="hr">
+		<div class="footer-foot">
+			<nav>
+			<ul class="d-flex center jc-fs m0 footer-menu-468">
+				<li><a href="#" class="dark-link fz16 f-color ">Магазин</a></li>
+				<li><a href="#" class="dark-link fz16 f-color">Обслуживание</a></li>
+				<li><a href="#" class="dark-link fz16 f-color">Блог</a></li>
+				<li><a href="#" class="dark-link fz16 f-color">Поддержка</a></li>
+				<li><a href="#" class="dark-link fz16 f-color">Контакты</a></li>
+			</ul>
+		</nav>
+		</div>
+	</div>
+</footer>
 
 </body>
 </html>
