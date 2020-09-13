@@ -359,7 +359,7 @@ nav .li-item {
 
 .main-banner {
   height: 100vh;
-  background: url(../images/banner.png) no-repeat center center;
+  background: url(banner.png) no-repeat center center;
   background-size: cover; }
 
 .input-in {
@@ -393,7 +393,7 @@ nav .li-item {
 
 .bg-catalog {
   height: 545px;
-  background: url(../images/Morten_Harket.png) no-repeat center center; }
+  background: url(Morten_Harket.png) no-repeat center center; }
 
 .button {
   -webkit-box-sizing: border-box;
@@ -452,15 +452,15 @@ main {
   padding: 25px 24px 60px; }
 
 .bg-free {
-  background: url(../images/subscribe_1.png);
+  background: url(subscribe_1.png);
   background-size: cover; }
 
 .bg-standart {
-  background: url(../images/subscribe_2.png);
+  background: url(subscribe_2.png);
   background-size: cover; }
 
 .bg-preium {
-  background: url(../images/subscribe_3.png);
+  background: url(subscribe_3.png);
   background-size: cover; }
 
 .mba {
