@@ -549,9 +549,6 @@ main {
     margin: 5px 0;
     text-align: center; }
 
-.mob-img {
-  margin-right: 80px; }
-
 .site-footer {
   background: -o-linear-gradient(0.25deg, #5328A1 32.83%, #95390C 81.56%);
   background: linear-gradient(89.75deg, #5328A1 32.83%, #95390C 81.56%); }
@@ -599,8 +596,8 @@ hr {
     width: 450px; }
   .art-banner {
     padding-left: 50px; }
-  .pt100-mob {
-    padding-top: 100px; } }
+  .mob-mr68 {
+    margin-right: 68px; } }
 
 @media (max-width: 1023px) {
   .container, .cat-banner {
@@ -608,11 +605,9 @@ hr {
   .sub {
     width: 280px;
     height: 463px; }
-  .mob-img {
-    width: 280px;
-    margin-right: 0; }
   .container {
-    padding: 0 20px; }
+    padding-left: 20px;
+    padding-right: 20px; }
   .similars,
   .albums {
     -webkit-box-pack: center;
@@ -621,14 +616,15 @@ hr {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  h2 {
-    font-size: 20px; }
   h3 {
-    margin: 10px 0 20px; }
+    margin: 10px 0 20px;
+    text-align: center; }
   .mob-m-y-50 {
     margin: 50px 0; }
-  .mob-news-img {
-    width: 280px; }
+  .mob-img {
+    display: block;
+    width: 280px;
+    margin: 0 auto; }
   .mob-fd-c {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -642,12 +638,20 @@ hr {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2; }
-  .mmb30 {
+  .mob-mb30 {
     margin-bottom: 30px; }
   .footer-elem {
     margin-right: 0; }
   .popular-song {
     width: 300px; } }
+
+@media (max-width: 768px) {
+  .mob-flex-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer-elem {
+    margin-right: 20px; } }
 
 @media (max-width: 650px) {
   .songs {
@@ -656,7 +660,10 @@ hr {
         -ms-flex-align: center;
             align-items: center; }
   h2 {
-    text-align: center; } }
+    text-align: center; }
+  .container-album:nth-child(2n),
+  .container-similars:nth-child(2n) {
+    margin-right: 0; } }
 
 @media (max-width: 600px) {
   .input-in {
