@@ -95,6 +95,10 @@ h2 {
   text-transform: uppercase;
   margin: 75px 0 50px 0; }
 
+h3 {
+  font-size: 30px;
+  font-weight: 300; }
+
 ul {
   padding-left: 0; }
 
@@ -110,6 +114,10 @@ li {
   border-radius: 5px;
   color: #fff; }
 
+.mx-25 {
+  margin-right: -25px;
+  margin-left: -25px; }
+
 .p-y-20 {
   padding: 20px 0; }
 
@@ -122,6 +130,9 @@ li {
 .mb0 {
   margin-bottom: 0; }
 
+.mb-auto {
+  margin-bottom: auto; }
+
 .mb30 {
   margin-bottom: 30px; }
 
@@ -131,20 +142,56 @@ li {
 .mb45 {
   margin-bottom: 45px; }
 
-.btn-margin {
+.mr35 {
   margin-right: 35px; }
+
+.mr20 {
+  margin-right: 20px; }
+
+.mr50 {
+  margin-right: 50px; }
+
+.mb70 {
+  margin-bottom: 70px; }
+
+.m-y20-50 {
+  margin: 20px 0 50px; }
 
 .pt100 {
   padding-top: 100px; }
 
-.margin-r-b {
-  margin: 0 50px 40px 0; }
-
 .w100 {
   width: 100%; }
 
+.w40 {
+  width: 40%; }
+
+.w250 {
+  width: 250px; }
+
+.p25 {
+  padding: 25px; }
+
+.h-100 {
+  height: 100%; }
+
+.p12-25 {
+  padding: 12px 25px; }
+
+.fz11 {
+  font-size: 11px; }
+
+.fz12 {
+  font-size: 12px; }
+
 .fz16 {
   font-size: 16px; }
+
+.fz20 {
+  font-size: 20px; }
+
+.fz24 {
+  font-size: 24px; }
 
 .container {
   width: 1200px;
@@ -153,21 +200,41 @@ li {
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-
-.flex-center {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.bx-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .text-dark {
   color: #8C8C8C; }
 
 .text-gray {
   color: #555555; }
+
+.text-up {
+  text-transform: uppercase; }
+
+.text-center {
+  text-align: center; }
 
 .justify-content-between {
   -webkit-box-pack: justify;
@@ -179,27 +246,16 @@ li {
       -ms-flex-pack: start;
           justify-content: flex-start; }
 
-.flex-column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.fw-w {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
 .align-items-start {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
 
+.pos-rel {
+  position: relative; }
+
 .mw560 {
   max-width: 560px; }
-
-.similars-img,
-.album-img {
-  width: 100%; }
 
 .header-absolute {
   position: absolute;
@@ -282,7 +338,6 @@ li {
   line-height: 1; }
 
 .nav li {
-  list-style-type: none;
   margin-right: 36px; }
   .nav li:last-child {
     margin-right: 0; }
@@ -292,68 +347,25 @@ li {
   .header-menu-color:hover {
     color: #fff; }
 
-.nav a {
+.nav-link {
   font-size: 11px;
   text-transform: uppercase;
   font-weight: bold; }
+
+.nav-link-footer {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 300; }
 
 main {
   background: #08020D;
   padding-bottom: 100px; }
 
-.subs {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: -25px;
-  margin-left: -25px; }
-
-.text-info-subs {
-  text-align: center; }
-
 .btn-dl {
   background: #FF4157;
   border-radius: 50px; }
 
-.albums {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.similars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.news-margin {
-  margin-bottom: 70px; }
-
-.info-app {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%; }
-
-.sub {
+.sub-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,19 +378,14 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 580px;
-  padding: 25px 24px 50px; }
+  padding: 25px 24px 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
-.sub-width {
-  width: 350px; }
-
-.sub-margin {
-  margin: 25px; }
-
-.sub-name {
-  font-size: 24px;
-  text-transform: uppercase;
-  margin: 0 0 auto 0; }
+.sub-wrapper {
+  width: 350px;
+  height: 580px; }
 
 .sub-bg-free {
   background: url(../images/subscribe_1.png);
@@ -406,13 +413,6 @@ main {
           align-items: flex-start;
   margin-bottom: 40px; }
 
-.sub-info-text {
-  font-size: 11px;
-  text-align: center; }
-
-.sub a {
-  margin-bottom: 30px; }
-
 .sub-int {
   font-size: 60px;
   line-height: 1;
@@ -427,28 +427,10 @@ main {
   display: -ms-flexbox;
   display: flex; }
 
-.news-margin {
-  margin-right: 50px; }
-
-.news h3 {
-  font-size: 30px;
-  font-weight: 300; }
-
-.news p {
-  margin: 10px 0; }
-
-.news-descr {
-  display: block;
-  margin: 5px 0; }
-
-.news-img {
-  width: 560px; }
-
 .color-author {
   color: #F89202; }
 
 .author {
-  margin: 20px 0 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,11 +440,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .author span {
-    font-size: 12px;
-    text-transform: uppercase; }
-  .author img {
-    margin-right: 20px; }
 
 .vert-bord {
   height: 10px;
@@ -524,7 +501,8 @@ main {
 
 .bg-catalog {
   height: 545px;
-  background: url(../images/Morten_Harket.png) no-repeat center center; }
+  background: url(../images/Morten_Harket.png) no-repeat center center;
+  background-size: cover; }
 
 .link-svg {
   width: 22px;
@@ -544,7 +522,7 @@ main {
   background: #95390C; }
 
 .art-banner {
-  margin: 0 auto 80px;
+  margin: 0 auto;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -587,9 +565,7 @@ main {
       flex-wrap: wrap; }
 
 .socials li {
-  margin: 0 21px 0 0; }
-  .socials li:last-child {
-    margin: 0; }
+  margin-right: 21px; }
 
 .advanced-menu-elem {
   margin-right: 100px; }
@@ -615,15 +591,9 @@ main {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-
-.song-width {
-  width: 510px; }
-
-.song-mb25 {
-  margin-bottom: 25px; }
-  .song-mb25:nth-child(3n) {
-    margin-bottom: 0; }
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .img-song {
   width: 55px;
@@ -636,69 +606,29 @@ main {
   .name-song p {
     margin: 5px 0; }
 
-.songs {
-  height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.artist {
-  font-size: 12px;
+.color-name-artists {
   color: #808080; }
 
-.album p {
-  margin: 0 0 10px; }
-
-.album svg {
-  width: 20px; }
-
-.album a {
-  position: relative; }
-
-.album svg {
+.album-svg {
+  width: 20px;
   position: absolute;
   left: 15px;
   bottom: 13px; }
 
-.album-name {
-  font-size: 20px; }
-
-.album-year {
-  font-size: 16px; }
-
-.artist-name {
-  font-size: 20px;
-  margin: 5px 0; }
-
-.artist-fans {
-  font-size: 16px; }
-
-.artist-name,
-.artist-fans {
-  text-align: center; }
-
-.similar-width {
-  width: 250px; }
-
 @media (max-width: 1280px) {
   .container {
     width: 1024px; }
-  .song-width {
-    width: 450px; } }
+  h3 {
+    margin-top: 0; }
+  .mob-justify-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 @media (max-width: 1024px) {
   .container {
     width: 900px; }
-  .news-margin {
+  .mob-mr0 {
     margin-right: 0; }
   .mob-order-1 {
     -webkit-box-ordinal-group: 2;
@@ -712,14 +642,14 @@ main {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3; }
-  .sub {
+  .mob-flex-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .sub-wrapper {
+    width: 280px;
     height: 463px; }
-  .subs {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .sub-width {
-    width: 280px; }
   .sub-name {
     font-size: 16px; }
   .sub-btn {
@@ -740,44 +670,28 @@ main {
     margin-bottom: 0; }
   .mob-mt40 {
     margin-top: 40px; }
-  .info-app {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
   .mob-order-3 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-            order: 2; }
-  .song-width {
-    width: 400px; } }
+            order: 2; } }
 
 @media (max-width: 900px) {
   .container {
     width: 768px; }
-  .song-width {
-    width: 280px; }
-  .album-name,
-  .artist-name {
+  .mob-fz16 {
     font-size: 16px; }
-  .album-year {
+  .mob-fz14 {
     font-size: 14px; }
-  .artist-fans {
+  .mob-fz12 {
     font-size: 12px; }
-  .album-width,
-  .similar-width {
-    width: 130px; } }
+  .mob-w140 {
+    width: 140px; }
+  .mob-p-25-10 {
+    padding: 25px 10px; } }
 
 @media (max-width: 768px) {
   .container {
     width: 600px; }
-  .sub-margin {
-    margin-bottom: 50px; }
-    .sub-margin:last-child {
-      margin-bottom: 0; }
   h1 {
     font-size: 30px; }
   .banner-text {
@@ -791,19 +705,28 @@ main {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .advanced-menu-elem {
-    margin: 0; }
-  .songs {
-    height: auto; }
-  .song-mb25:nth-child(3n) {
-    margin-bottom: 25px; } }
+    margin: 0; } }
 
 @media (max-width: 600px) {
   .container {
     width: 280px; }
-  .sub-margin {
-    margin: 25px 0; }
-  .news-img,
-  .app-img {
+  .mob768-mr0 {
+    margin-right: 0; }
+  .mob-justify-content-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .mob-m0 {
+    margin: 0; }
+  .mob-mb35 {
+    margin-bottom: 35px; }
+  .mob-p-25-0 {
+    padding: 25px 0; }
+  .mob-p-12-0 {
+    padding: 12px 0; }
+  .art-banner {
+    margin-top: 200px; }
+  .mob-w280 {
     width: 280px; }
   .input-in {
     -webkit-box-flex: 1;
