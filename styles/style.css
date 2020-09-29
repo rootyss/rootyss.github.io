@@ -93,7 +93,9 @@ h2 {
   font-size: 38px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 75px 0 50px 0; }
+  margin: 0;
+  text-align: center;
+  padding: 75px 0 50px 0; }
 
 h3 {
   font-size: 30px;
@@ -130,8 +132,8 @@ li {
 .mb0 {
   margin-bottom: 0; }
 
-.mb-auto {
-  margin-bottom: auto; }
+.mb-sub {
+  margin-bottom: 37%; }
 
 .mb30 {
   margin-bottom: 30px; }
@@ -197,7 +199,7 @@ li {
   width: 1200px;
   margin: 0 auto; }
 
-.d-flex {
+.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,20 +385,24 @@ main {
       -ms-flex: 1;
           flex: 1; }
 
-.sub-wrapper {
-  width: 350px;
-  height: 580px; }
+.col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%; }
+
+.mb-sub {
+  margin-bottom: 70%; }
 
 .sub-bg-free {
-  background: url(../images/subscribe_1.png);
+  background: url(../images/subscribe_1.png) no-repeat;
   background-size: cover; }
 
 .sub-bg-standart {
-  background: url(../images/subscribe_2.png);
+  background: url(../images/subscribe_2.png) no-repeat;
   background-size: cover; }
 
 .sub-bg-preium {
-  background: url(../images/subscribe_3.png);
+  background: url(../images/subscribe_3.png) no-repeat;
   background-size: cover; }
 
 .sub-btn {
@@ -623,11 +629,23 @@ main {
   .mob-justify-center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%; }
+  .mb-sub {
+    margin-bottom: 44%; } }
 
 @media (max-width: 1024px) {
   .container {
     width: 900px; }
+  .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 39%;
+            flex: 0 0 39%; }
+  .mb-sub {
+    margin-bottom: 57%; }
   .mob-mr0 {
     margin-right: 0; }
   .mob-order-1 {
@@ -647,9 +665,6 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .sub-wrapper {
-    width: 280px;
-    height: 463px; }
   .sub-name {
     font-size: 16px; }
   .sub-btn {
@@ -678,6 +693,10 @@ main {
 @media (max-width: 900px) {
   .container {
     width: 768px; }
+  .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 46%;
+            flex: 0 0 46%; }
   .mob-fz16 {
     font-size: 16px; }
   .mob-fz14 {
@@ -692,6 +711,12 @@ main {
 @media (max-width: 768px) {
   .container {
     width: 600px; }
+  .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+  .mb-sub {
+    margin-bottom: 35%; }
   h1 {
     font-size: 30px; }
   .banner-text {
@@ -710,6 +735,10 @@ main {
 @media (max-width: 600px) {
   .container {
     width: 280px; }
+  .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
   .mob768-mr0 {
     margin-right: 0; }
   .mob-justify-content-center {
